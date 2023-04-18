@@ -24,8 +24,8 @@
 
     <div class="frame">
       <div class="left">
-        <i class="iconfont icon-start" v-if="!on" @click="start" style="color:#12b812"></i>
-        <i class="iconfont  icon-stopiconcopy" v-if="on" @click="stop" style="color: #f83b3b"></i>
+        <i class="icon-start" v-if="!on" @click="start" style="color:#12b812"></i>
+        <i class="icon-stop" v-if="on" @click="stop" style="color: #f83b3b"></i>
         <i :class='["iconfont icon-dibu", {"active" :autoScrollToBottom }]' @click="autoScroll"></i>
         <i :class='["iconfont icon-huanhang", {"active" :autoBreak }]' @click="autoChangeLine"></i>
         <i class="el-icon-delete" @click="clear"></i>
@@ -256,6 +256,22 @@ export default {
 
     .active {
       background-color: #ababa7;
+    }
+    .icon-start {
+        display: inline-block;
+        width: 100%;
+        height: 24px;
+        margin-bottom: 6px;
+        background: url('~@/assets/img/start.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .icon-stop {
+        display: inline-block;
+        width: 100%;
+        height: 24px;
+        margin-bottom: 6px;
+        background: url('~@/assets/img/stop.png') no-repeat;
+        background-size: 100% 100%;
     }
   }
 
