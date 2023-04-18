@@ -6,7 +6,7 @@
 
     <groupId>com.jq</groupId>
     <artifactId>kafka-ui-lite</artifactId>
-    <version>1.2.11</version>
+    <version>1.2.9</version>
 
     <properties>
         <docker.image.prefix>freakchicken</docker.image.prefix>
@@ -141,7 +141,7 @@
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
-            <version>3.36.0.3</version>
+            <version>3.23.1</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -228,13 +228,13 @@
                 <executions>
 
                     <execution>
-                        <id>exec-cnpm-install</id>
+                        <id>exec-npm-install</id>
                         <phase>validate</phase>
                         <goals>
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <executable>cnpm</executable>
+                            <executable>npm</executable>
                             <arguments>
                                 <argument>install</argument>
                             </arguments>
@@ -294,6 +294,4 @@
 
         </plugins>
     </build>
-
-
 </project>
